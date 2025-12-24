@@ -71,6 +71,7 @@ export const AppContextProvider = ({ children }) => {
     addToCart,
     updatecartItem,
     removeFromCart,
+    cartItems,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

@@ -17,8 +17,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
-
-      <h1 class="text-3xl font-bold underline"></h1>
     </div>
   );
 };
