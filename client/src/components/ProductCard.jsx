@@ -39,6 +39,7 @@ const ProductCard = ({ product }) => {
             {product.offerPrice}{" "}
             <span className="text-gray-500/60 md:text-sm text-xs line-through">
               {currency}
+
               {product.price}
             </span>
           </p>
