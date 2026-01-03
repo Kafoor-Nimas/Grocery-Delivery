@@ -7,7 +7,16 @@ const Login = () => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
 
-  const { setShowUserLogin } = useAppContext();
+  const { setShowUserLogin, setUser } = useAppContext();
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    setUser({
+      name: "Nimas",
+      email: "test@gmail.com",
+    });
+    setShowUserLogin(false);
+  };
 
   return (
     <div
@@ -15,6 +24,7 @@ const Login = () => {
       className="fixed top-0 bottom-0 left-0 right-0 z-30 flex items-center text-sm text-gray-600 bg-black/50"
     >
       <form
+        onSubmit={onSubmitHandler}
         onClick={(e) => e.stopPropagation()}
         className="flex flex-col gap-4 m-auto items-start p-8 py-12 w-80 sm:w-[352px] text-gray-500 rounded-lg shadow-xl border border-gray-200 bg-white"
       >
