@@ -1,30 +1,35 @@
-const ProductDetails = () => {
-  const product = {
-    name: "Nike Pegasus 41 shoes",
-    category: "Sports",
-    price: 189,
-    offerPrice: 159,
-    rating: 4,
-    images: [
-      "https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/card/productImage.png",
-      "https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/card/productImage2.png",
-      "https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/card/productImage3.png",
-      "https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/card/productImage4.png",
-    ],
-    description: [
-      "High-quality material",
-      "Comfortable for everyday use",
-      "Available in different sizes",
-    ],
-  };
+import { useEffect, useState } from "react";
+import { useAppContext } from "../context/AppContext";
+import { Link, useParams } from "react-router-dom";
 
-  const [thumbnail, setThumbnail] = React.useState(product.images[0]);
+const ProductDetails = () => {
+  const { products, navigate, currency, addToCart } = useAppContext();
+  const { id } = useParams();
+
+  const [relatedProducts, setRelaltedProducts] = useState();
+  const [thumbnail, setThumbnail] = useState(null);
+
+  const product = products.find((item) => item._id === id);
+
+  useEffect(() => {
+    if (products.length > 0) {
+      let productsCopy = products.slice();
+      productsCopy = productsCopy.filter(
+        (item) => product.category === item.category
+      );
+      setRelaltedProducts(productsCopy.slice(0, 5));
+    }
+  }, [products]);
+
+  useEffect(() => {
+    setThumbnail(product?.image[0] ? product.image[0] : null);
+  }, [product]);
 
   return (
     product && (
-      <div className="max-w-6xl w-full px-6">
+      <div className="mt-12">
         <p>
-          <span>Home</span> /<span> Products</span> /
+          <Link to={"/"}>Home</Link> /<Link to={"/products"}> Products</Link> /
           <span> {product.category}</span> /
           <span className="text-indigo-500"> {product.name}</span>
         </p>
@@ -121,6 +126,5 @@ const ProductDetails = () => {
     )
   );
 };
-
 
 export default ProductDetails;
