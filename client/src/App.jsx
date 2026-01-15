@@ -13,13 +13,14 @@ import ProductDetails from "./pages/ProductDetails.jsx";
 import AddAddress from "./pages/AddAddress.jsx";
 import MyOrders from "./pages/MyOrders.jsx";
 import SellerLogin from "./components/seller/SellerLogin.jsx";
+import SellerLayout from "./pages/seller/SellerLayout.jsx";
 
 const App = () => {
   const isSellerPath = useLocation().pathname.includes("seller");
 
   const { showUserLogin, isSeller } = useAppContext();
   return (
-    <div>
+    <div className="text-default min-h-screen text-gray-700 bg-white">
       {isSellerPath ? null : <Navbar />}
       {showUserLogin && <Login />}
       <Toaster />
@@ -36,7 +37,7 @@ const App = () => {
           <Route path="/my-orders" element={<MyOrders />} />
           <Route
             path="/seller"
-            element={isSeller ? null : <SellerLogin />}
+            element={isSeller ? <SellerLayout /> : <SellerLogin />}
           ></Route>
         </Routes>
       </div>
