@@ -1,4 +1,5 @@
 import { v2 as cloudinary } from "cloudinary";
+import Product from "../models/Product.js";
 
 //Add Product : /api/product/add
 export const addProduct = async (req, res) => {
@@ -15,7 +16,13 @@ export const addProduct = async (req, res) => {
         return result.secure_url;
       }),
     );
-  } catch (error) {}
+    await Product.create({ ...productData, image: imagesUrl });
+
+    return res.json({ success: true, message: "Product added successfully" });
+  } catch (error) {
+    console.log(error.message);
+    res.json({ success: false, message: error.message });
+  }
 };
 
 //Get Product : /api/product/list
