@@ -1,5 +1,6 @@
 import Order from "../models/Order.js";
 import Product from "../models/Product.js";
+import stripe from "stripe";
 
 //Place Order COD : /api/order/cod
 export const placeOrderCOD = async (req, res) => {
@@ -64,6 +65,8 @@ export const placeOrderStripe = async (req, res) => {
       address,
       paymentType: "Online",
     });
+    //Stripe Gateway Initialize
+    const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY);
 
     return res.json({ success: true, message: "Order Placed Successfully" });
   } catch (error) {
