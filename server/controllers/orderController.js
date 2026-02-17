@@ -84,7 +84,19 @@ export const placeOrderStripe = async (req, res) => {
       };
     });
 
-    return res.json({ success: true, message: "Order Placed Successfully" });
+    //Create session
+    const session = await stripeInstance.checkout.sessions.create({
+      line_items,
+      mode: "payment",
+      success_url: `${origin}/loader?next=my_orders`,
+      cancel_url: `${origin}/cart`,
+      metadata: {
+        orderId: order._id.toString(),
+        userId,
+      },
+    });
+
+    return res.json({ success: true, url: session.url });
   } catch (error) {
     return res.json({ success: false, message: error.message });
   }
