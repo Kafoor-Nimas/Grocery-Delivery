@@ -49,7 +49,7 @@ export const placeOrderStripe = async (req, res) => {
       const product = await Product.findById(item.product);
       productData.push({
         name: product.name,
-        price: product.offerprice,
+        price: product.offerPrice,
         quantity: item.quantity,
       });
       return (await acc) + product.offerPrice * item.quantity;
