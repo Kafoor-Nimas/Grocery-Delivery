@@ -114,6 +114,29 @@ export const placeOrderStripe = async (req, res) => {
       } catch (error) {
         res.status(400).send(`Webhook Error: ${error.message}`);
       }
+
+      //Handle the event
+      switch (event.type) {
+        case "payment_intent.succeeded":
+          {
+            const paymentIntent = event.data.object;
+            const paymentIntentId = paymentIntent.id;
+
+            // Getting Session Metadata
+            const session = await stripeInstance.checkout.sessions.list({
+              payment_intent: paymentIntentId,
+            });
+
+            const { orderId, userId } = session.data[0].metadata;
+
+            
+          }
+
+          break;
+
+        default:
+          break;
+      }
     };
 
     return res.json({ success: true, url: session.url });
