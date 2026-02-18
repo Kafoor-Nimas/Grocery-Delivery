@@ -96,6 +96,26 @@ export const placeOrderStripe = async (req, res) => {
       },
     });
 
+    // Stribe Webhooks to verify payments action : /stripe
+    export const stribeWebhooks = async (req, res) => {
+      // Stripe Gateway Initialize
+      const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY);
+
+      const signature = req.headers["stripe-signature"];
+
+      let event;
+
+      try {
+        event = stripeInstance.webhooks.constructEvent(
+          req.body,
+          signature,
+          process.env.STRIPE_WEBHOOK_SECRET,
+        );
+      } catch (error) {
+        res.status(400).send(`Webhook Error: ${error.message}`);
+      }
+    };
+
     return res.json({ success: true, url: session.url });
   } catch (error) {
     return res.json({ success: false, message: error.message });
