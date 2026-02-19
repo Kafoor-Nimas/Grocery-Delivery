@@ -51,6 +51,18 @@
 
 ![My-Orders Page](client/public/my-orders.png)
 
+### Admin Add-Product Page
+
+![Admin Add-Product Page](client/public/Admin-AddProduct.png)
+
+### Admin Stock Page
+
+![Admin Stock Page](client/public/Admin-stock.png)
+
+### Admin Orders Page
+
+![Admin Orders Page](client/public/admin-order.png)
+
 ---
 
 ---
