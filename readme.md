@@ -11,7 +11,7 @@
 
 ## 🌐 Live Demo
 
-> **[View Live App →](#)** _([Replace with your deployment URL](https://grocerydelivery-zeta.vercel.app/))_
+> **[View Live App →](#)** _(https://grocerydelivery-zeta.vercel.app)_
 
 | Credential | Value                 |
 | ---------- | --------------------- |
