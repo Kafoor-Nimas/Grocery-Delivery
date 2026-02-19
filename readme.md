@@ -15,7 +15,7 @@
 
 | Credential | Value                 |
 | ---------- | --------------------- |
-| Test Card  | `4242 4242 4242 4242` |
+| Test Card  | `5555 5555 5555 4444` |
 | Expiry     | Any future date       |
 | CVV        | Any 3 digits          |
 
@@ -23,7 +23,31 @@
 
 ## 📸 Screenshots
 
-> _(Add screenshots of your app here — Home, Product Page, Cart, Checkout)_
+### Home Page
+
+![Home Page](/public/home.png)
+
+### AllProducts Page
+
+![AllProducts Page](/public/allProducts.png)
+
+### Cart Page
+
+![Cart Page](/public/cart.png)
+
+### Category Page
+
+![Category Page](/public/Category.png)
+
+### ProductDetails Page
+
+![ProductDetails Page](/public/productDetails.png)
+
+### Search Page
+
+![Search Page](/public/search.png)
+
+```
 
 ---
 
@@ -71,27 +95,29 @@
 ## 🗂️ Project Structure
 
 ```
+
 freshcart/
-├── client/                   # React frontend
-│   ├── public/
-│   └── src/
-│       ├── components/       # Reusable UI components
-│       ├── pages/            # Route-level pages
-│       ├── context/          # React Context (cart, auth)
-│       ├── hooks/            # Custom hooks
-│       ├── utils/            # Axios instance, helpers
-│       └── App.jsx
+├── client/ # React frontend
+│ ├── public/
+│ └── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Route-level pages
+│ ├── context/ # React Context (cart, auth)
+│ ├── hooks/ # Custom hooks
+│ ├── utils/ # Axios instance, helpers
+│ └── App.jsx
 │
-├── server/                   # Node/Express backend
-│   ├── config/               # DB & Cloudinary config
-│   ├── controllers/          # Route logic
-│   ├── middleware/            # Auth, error handling, multer
-│   ├── models/               # Mongoose schemas
-│   ├── routes/               # API routes
-│   └── server.js
+├── server/ # Node/Express backend
+│ ├── config/ # DB & Cloudinary config
+│ ├── controllers/ # Route logic
+│ ├── middleware/ # Auth, error handling, multer
+│ ├── models/ # Mongoose schemas
+│ ├── routes/ # API routes
+│ └── server.js
 │
 └── README.md
-```
+
+````
 
 ---
 
@@ -109,7 +135,7 @@ freshcart/
 ```bash
 git clone https://github.com/your-username/freshcart.git
 cd freshcart
-```
+````
 
 ### 2. Set up the Backend
 
