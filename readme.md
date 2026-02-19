@@ -1,4 +1,4 @@
-# 🛒 FreshCart — Grocery Delivery App
+# 🛒 GreenCart — Grocery Delivery App
 
 > A full-stack grocery delivery web application built with the **MERN stack**, featuring real-time cart management, secure payments, cloud image uploads, and a seamless shopping experience.
 
@@ -11,7 +11,7 @@
 
 ## 🌐 Live Demo
 
-> **[View Live App →](#)** _(Replace with your deployment URL)_
+> **[View Live App →](#)** _([Replace with your deployment URL](https://grocerydelivery-zeta.vercel.app/))_
 
 | Credential | Value                 |
 | ---------- | --------------------- |
