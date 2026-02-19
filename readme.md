@@ -243,12 +243,12 @@ Pull requests are welcome! If you'd like to make major changes, please open an i
 
 ## 👨‍💻 Author
 
-**Nimas**
+**Nimas Kafoor**
 
-- Portfolio: [yourportfolio.com](#)
-- LinkedIn: [www.linkedin.com/in/nimas-kafoor](#)
-- GitHub: [@your-username](https://github.com/Kafoor-Nimas/Grocery-Delivery.git)
-- Email: your@email.com
+- 🌐 Portfolio: [yourportfolio.com](https://yourportfolio.com)
+- 💼 LinkedIn: [linkedin.com/in/nimas-kafoor](https://www.linkedin.com/in/nimas-kafoor)
+- 🐙 GitHub: [github.com/Kafoor-Nimas](https://github.com/Kafoor-Nimas)
+- 📧 Email: [nimaskafoor@gmail.com](mailto:nimaskafoor@gmail.com)
 
 ---
 
