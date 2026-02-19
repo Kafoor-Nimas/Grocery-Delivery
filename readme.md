@@ -55,9 +55,7 @@
 
 ---
 
-##✨ Features
-
----
+## ✨ Features
 
 - **User Authentication** — Secure registration and login with JWT-based sessions
 - **Product Catalog** — Browse groceries by category with search and filter functionality
@@ -102,7 +100,7 @@
 
 ```
 
-freshcart/
+Grocery-Delivery/
 ├── client/ # React frontend
 │ ├── public/
 │ └── src/
@@ -113,7 +111,7 @@ freshcart/
 │ ├── utils/ # Axios instance, helpers
 │ └── App.jsx
 │
-├── server/ # Node/Express backend
+├── server/ # Express backend
 │ ├── config/ # DB & Cloudinary config
 │ ├── controllers/ # Route logic
 │ ├── middleware/ # Auth, error handling, multer
@@ -139,8 +137,8 @@ freshcart/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/freshcart.git
-cd freshcart
+git clone https://github.com/Kafoor-Nimas/Grocery-Delivery.git
+cd Grocery-Delivery
 ```
 
 ### 2. Set up the Backend
@@ -153,8 +151,7 @@ npm install
 Create a `.env` file in the `/server` directory:
 
 ```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
+MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
@@ -162,13 +159,22 @@ CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
 STRIPE_SECRET_KEY=your_stripe_test_secret_key
+STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret_key
+
 CLIENT_URL=http://localhost:3000
+
+#Admin Credentials
+
+SELLER_EMAIL=add_admin_email
+SELLER_PASSWORD=add_admin_password
+
 ```
 
 Start the server:
 
 ```bash
-npm run dev
+npm run server
 ```
 
 ### 3. Set up the Frontend
@@ -181,17 +187,18 @@ npm install
 Create a `.env` file in the `/client` directory:
 
 ```env
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_test_publishable_key
+
+VITE_CURRENCY='$'
+VITE_BACKEND_URL="http://localhost:4000"
 ```
 
 Start the client:
 
 ```bash
-npm start
+npm run dev
 ```
 
-The app will be running at **http://localhost:3000**
+The app will be running at **http://localhost:4000**
 
 ---
 
