@@ -57,6 +57,8 @@
 
 ##✨ Features
 
+---
+
 - **User Authentication** — Secure registration and login with JWT-based sessions
 - **Product Catalog** — Browse groceries by category with search and filter functionality
 - **Shopping Cart** — Add, remove, and update quantities in real time
@@ -65,7 +67,7 @@
 - **Order Management** — Users can view their order history and status
 - **Toast Notifications** — Instant feedback via React Hot Toast
 - **Responsive Design** — Fully mobile-friendly UI built with Tailwind CSS
-- **Admin Panel** _(optional — remove if not applicable)_ — Manage products, orders, and users
+- **Admin Panel** — Manage products, orders, and users
 
 ---
 
