@@ -202,41 +202,6 @@ The app will be running at **http://localhost:4000**
 
 ---
 
-## 🔌 API Endpoints
-
-### Auth
-
-| Method | Endpoint             | Description           |
-| ------ | -------------------- | --------------------- |
-| POST   | `/api/auth/register` | Register a new user   |
-| POST   | `/api/auth/login`    | Login and receive JWT |
-
-### Products
-
-| Method | Endpoint            | Description            |
-| ------ | ------------------- | ---------------------- |
-| GET    | `/api/products`     | Get all products       |
-| GET    | `/api/products/:id` | Get a single product   |
-| POST   | `/api/products`     | Create product (admin) |
-| PUT    | `/api/products/:id` | Update product (admin) |
-| DELETE | `/api/products/:id` | Delete product (admin) |
-
-### Cart & Orders
-
-| Method | Endpoint            | Description           |
-| ------ | ------------------- | --------------------- |
-| GET    | `/api/cart`         | Get user's cart       |
-| POST   | `/api/cart`         | Add item to cart      |
-| DELETE | `/api/cart/:itemId` | Remove item from cart |
-| POST   | `/api/orders`       | Place an order        |
-| GET    | `/api/orders`       | Get user's orders     |
-
-### Payments
-
-| Method | Endpoint                      | Description                    |
-| ------ | ----------------------------- | ------------------------------ |
-| POST   | `/api/payment/create-session` | Create Stripe checkout session |
-
 ---
 
 ## 🧠 Key Implementation Highlights
@@ -251,12 +216,12 @@ The app will be running at **http://localhost:4000**
 
 ## 🚀 Deployment
 
-| Layer    | Platform         |
-| -------- | ---------------- |
-| Frontend | Vercel / Netlify |
-| Backend  | Render / Railway |
-| Database | MongoDB Atlas    |
-| Images   | Cloudinary       |
+| Layer    | Platform      |
+| -------- | ------------- |
+| Frontend | Vercel        |
+| Backend  | Render        |
+| Database | MongoDB Atlas |
+| Images   | Cloudinary    |
 
 > Make sure to configure environment variables on your chosen hosting platform before deploying.
 
@@ -274,19 +239,15 @@ Pull requests are welcome! If you'd like to make major changes, please open an i
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Nimas**
 
 - Portfolio: [yourportfolio.com](#)
-- LinkedIn: [linkedin.com/in/yourname](#)
-- GitHub: [@your-username](https://github.com/your-username)
+- LinkedIn: [www.linkedin.com/in/nimas-kafoor](#)
+- GitHub: [@your-username](https://github.com/Kafoor-Nimas/Grocery-Delivery.git)
 - Email: your@email.com
 
 ---
