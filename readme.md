@@ -25,27 +25,27 @@
 
 ### Home Page
 
-![Home Page](/public/home.png)
+![Home Page](client/public/home.png)
 
 ### AllProducts Page
 
-![AllProducts Page](/public/allProducts.png)
+![AllProducts Page](client/public/allProducts.png)
 
 ### Cart Page
 
-![Cart Page](/public/cart.png)
+![Cart Page](client/public/cart.png)
 
 ### Category Page
 
-![Category Page](/public/Category.png)
+![Category Page](client/public/Category.png)
 
 ### ProductDetails Page
 
-![ProductDetails Page](/public/productDetails.png)
+![ProductDetails Page](client/public/productDetails.png)
 
 ### Search Page
 
-![Search Page](/public/search.png)
+![Search Page](client/public/search.png)
 
 ```
 
