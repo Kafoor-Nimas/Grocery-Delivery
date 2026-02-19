@@ -47,11 +47,15 @@
 
 ![Search Page](client/public/search.png)
 
-```
+### My-Orders Page
+
+![My-Orders Page](client/public/my-orders.png)
 
 ---
 
-## ✨ Features
+---
+
+##✨ Features
 
 - **User Authentication** — Secure registration and login with JWT-based sessions
 - **Product Catalog** — Browse groceries by category with search and filter functionality
@@ -117,7 +121,7 @@ freshcart/
 │
 └── README.md
 
-````
+```
 
 ---
 
@@ -135,7 +139,7 @@ freshcart/
 ```bash
 git clone https://github.com/your-username/freshcart.git
 cd freshcart
-````
+```
 
 ### 2. Set up the Backend
 
