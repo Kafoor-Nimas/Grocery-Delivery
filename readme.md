@@ -257,7 +257,7 @@ Pull requests are welcome! If you'd like to make major changes, please open an i
 
 **Nimas Kafoor**
 
-- 🌐 Portfolio: [yourportfolio.com](https://yourportfolio.com)
+- 🌐 Portfolio: [yourportfolio.com](https://nimas-portfolio.vercel.app/)
 - 💼 LinkedIn: [linkedin.com/in/nimas-kafoor](https://www.linkedin.com/in/nimas-kafoor)
 - 🐙 GitHub: [github.com/Kafoor-Nimas](https://github.com/Kafoor-Nimas)
 - 📧 Email: [nimaskafoor@gmail.com](mailto:nimaskafoor@gmail.com)
